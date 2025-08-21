@@ -10,10 +10,10 @@ class Mpe < Formula
 
   bottle do
     root_url "https://github.com/manetu/homebrew-tap/releases/download/v1.0.1"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "48078732e72825749a2a89e68e6a86a712c4b3879e89ec3fe54116621ba07c4a"
-    sha256 cellar: :any_skip_relocation, monterey: "9ac3b24454f57cdfabba2550df68827e98cc94f1340a3b9b4bb1231e85842ded"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a951aca47e21df6b58bf422be7887b83d69fc6abdd2c6783a13280eebb4e6c06"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "4c268d94820416c9a7cb6b610d9d04dc7c8f29bd5859809a959bd5dc731eaf57"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "a0e5459452359150699c3793a3d286c28f38cd0b906206deebb4f3b9731dc8c5"
+    sha256 cellar: :any_skip_relocation, monterey: "cd6f8c46d4c779569292b0c7671489dcae2a4abf24071c45d3604f23ba561592"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0199f89dac96c197bbbe16a7bf9aab64ac8066b9d9690351b6cbf2b09f117891"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "9859047fa817f5ff4d0f76c0a101e09cd40a0224f725fc51ece5167fb846432d"
   end
 
   def install
