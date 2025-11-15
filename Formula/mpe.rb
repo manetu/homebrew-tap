@@ -1,19 +1,19 @@
 class Mpe < Formula
   desc "Manetu Policy Engine CLI"
   homepage "https://github.com/manetu/homebrew-tap"
-  version "1.0.10-1.38"
+  version "1.0.10-2.40"
   license "Proprietary"
 
   # Main URL for the source/binary
-  url "https://github.com/manetu/homebrew-tap/releases/download/v1.0.10-1.38/mpe-1.0.10-1.38.tar.gz"
-  sha256 "1e7fa3f8c9c535a8a12dede2d58d2a2c375dec4851b14aaaa89ba81175a9bb3a"
+  url "https://github.com/manetu/homebrew-tap/releases/download/v1.0.10-2.40/mpe-1.0.10-2.40.tar.gz"
+  sha256 "dc916870c2e5b59af10daa8d233f91d895c757ffbe1a5ce51e0f214e97a23e25"
 
   bottle do
-    root_url "https://github.com/manetu/homebrew-tap/releases/download/v1.0.10-1.38"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "7068c39d01dc5e0b9217540edb20f5cff144223e56dd7502b9d1a0ab76d597bd"
-    sha256 cellar: :any_skip_relocation, monterey: "c4c0311b36f587156a63f4aea5091d537edc0a4d4bc162c35a6a2e58e53d2d4a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "936b514fc149d1d103d002264f8aa684eef8753b120553320d96cb494bf81a9a"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "d09a31de49b27e0953bc6c9900635e26addab1427418c2b1dfb38f7e1c7e3d26"
+    root_url "https://github.com/manetu/homebrew-tap/releases/download/v1.0.10-2.40"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "d0ea766b1920132beb77e014a918a7a4215ff41a91daec9ba78030719ce06da2"
+    sha256 cellar: :any_skip_relocation, monterey: "9b6bff91902ac6f37ca77ec2a7cd1411608b7af10c6dce06f2180c0ecabf915b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "879757443ca835893ff21b083e34f5a325050e3d3f62027f8d2fa51d6964ee78"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "da6aa0d14ed98212a8343315f49fd908e47d572e6bb69f8242cb17e4fb04c120"
   end
 
   def install
