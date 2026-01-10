@@ -1,26 +1,27 @@
+# typed: false
+# frozen_string_literal: true
+
+# Homebrew formula for Manetu Policy Engine CLI
+# This formula builds from source using Go
 class Mpe < Formula
-  desc "Manetu Policy Engine CLI"
-  homepage "https://github.com/manetu/homebrew-tap"
-  version "1.0.10-5.46"
-  license "Proprietary"
+  desc "CLI for the Manetu Policy Engine - policy authoring, testing, and serving"
+  homepage "https://github.com/manetu/policyengine"
+  url "https://github.com/manetu/policyengine/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "b2f758790b27372cb51b3f36bd4040c12ed3ee45a88ce8b662a26955f46b75eb"
+  license "Apache-2.0"
+  head "https://github.com/manetu/policyengine.git", branch: "master"
 
-  # Main URL for the source/binary
-  url "https://github.com/manetu/homebrew-tap/releases/download/v1.0.10-5.46/mpe-1.0.10-5.46.tar.gz"
-  sha256 "03fa3f81c5d05fe6824354d2367ba8015cd748f05337f5f899303b06c03596fe"
-
-  bottle do
-    root_url "https://github.com/manetu/homebrew-tap/releases/download/v1.0.10-5.46"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "f28d83479135547f717211d02cdb57406563a656f221dfd6a0a520c874f8ba22"
-    sha256 cellar: :any_skip_relocation, monterey: "e3ea291e9e3f5efdbef70b055eba00dbc58e1c82ac8b6c680064a2eb33b00bf7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0c87fbb5005042c33f68f14940a5dd3daedb3f6abf25bd08ece3eb48b4455165"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "0b4f46129cb09af27d5d764b7176b89f37bfc9c80fa5bb7926b642423dc9640d"
-  end
+  depends_on "go" => :build
 
   def install
-    bin.install "bin/mpe"
+    ldflags = %W[
+      -s -w
+      -X github.com/manetu/policyengine/cmd/mpe/version.Version=#{version}
+    ]
+    system "go", "build", *std_go_args(ldflags:), "./cmd/mpe"
   end
 
   test do
-    system "#{bin}/mpe", "--help"
+    assert_match version.to_s, shell_output("#{bin}/mpe version")
   end
 end
