@@ -2,28 +2,28 @@
 class Kura < Formula
   desc "Kura — sandboxed Claude Code CLI built on Manetu AgentVisor"
   homepage "https://github.com/manetu/kura"
-  version "0.1.0-4.11"
+  version "0.1.0-5.12"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/manetu/kura/releases/download/v0.1.0-4.11/kura-darwin-arm64-v0.1.0-4.11.tar.gz"
-      sha256 "7492faa6b5c27674190bbb36f53b9029f1a5b6d1a0f4b8bdf7e0b6ae60d3ccb1"
+      url "https://github.com/manetu/kura/releases/download/v0.1.0-5.12/kura-darwin-arm64-v0.1.0-5.12.tar.gz"
+      sha256 "596c017beca8c7c5c8c1009bbdcec1bb101ae0beb6a007228d5ef9d7c2107220"
     end
     on_intel do
-      url "https://github.com/manetu/kura/releases/download/v0.1.0-4.11/kura-darwin-amd64-v0.1.0-4.11.tar.gz"
-      sha256 "7a781865bed5f2332d265c4e7a69fe5e3966d694902282b06e33a7ee40b8cdd4"
+      url "https://github.com/manetu/kura/releases/download/v0.1.0-5.12/kura-darwin-amd64-v0.1.0-5.12.tar.gz"
+      sha256 "1e54361eb0e2d68b85ad2abddec61895da693683db76a344ccaefa8adaff6d99"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/manetu/kura/releases/download/v0.1.0-4.11/kura-linux-arm64-v0.1.0-4.11.tar.gz"
-      sha256 "37ae981781255e901b0f2e5b2a07dd0556fc7bd4a9989d7304c12fa14891e0aa"
+      url "https://github.com/manetu/kura/releases/download/v0.1.0-5.12/kura-linux-arm64-v0.1.0-5.12.tar.gz"
+      sha256 "c39d2d5b303f028bfc3918a346b938b003b88f23d359211dfb14225289f5ffd4"
     end
     on_intel do
-      url "https://github.com/manetu/kura/releases/download/v0.1.0-4.11/kura-linux-amd64-v0.1.0-4.11.tar.gz"
-      sha256 "51537aeeba3daea8e595141b59d8f77ff238e6ebb9231156dc3f4e1a792488e1"
+      url "https://github.com/manetu/kura/releases/download/v0.1.0-5.12/kura-linux-amd64-v0.1.0-5.12.tar.gz"
+      sha256 "93ed5d3f55d3fa8fe0955e6e635296c32d6d0c85be91363f33b004035f3b286e"
     end
   end
 
