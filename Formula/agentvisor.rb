@@ -2,28 +2,28 @@
 class Agentvisor < Formula
   desc "Manetu AgentVisor — secure runtime for AI agents"
   homepage "https://github.com/manetu/agentvisor"
-  version "0.5.0-55.202"
+  version "0.6.0-1.205"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/manetu/agentvisor/releases/download/v0.5.0-55.202/agentvisor-darwin-arm64-v0.5.0-55.202.tar.gz"
-      sha256 "c4b02392aceeb01302df1a3a00fc3aa2dc1924394782a20723d2fa6431c87161"
+      url "https://github.com/manetu/agentvisor/releases/download/v0.6.0-1.205/agentvisor-darwin-arm64-v0.6.0-1.205.tar.gz"
+      sha256 "a9eb4a37fb0966ed3a79a3cf15b022aa9061c8de98c62dd5bce6bc3c522e9f13"
     end
     on_intel do
-      url "https://github.com/manetu/agentvisor/releases/download/v0.5.0-55.202/agentvisor-darwin-amd64-v0.5.0-55.202.tar.gz"
-      sha256 "023b0e7f8a58bc799425a565f2f7ebe4284896026ba4a1b942c8c09ea70e1958"
+      url "https://github.com/manetu/agentvisor/releases/download/v0.6.0-1.205/agentvisor-darwin-amd64-v0.6.0-1.205.tar.gz"
+      sha256 "5b45ee5891b12b10894cc56285f917f30e0ca6334bc42cda1ea1546740871a04"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/manetu/agentvisor/releases/download/v0.5.0-55.202/agentvisor-linux-arm64-v0.5.0-55.202.tar.gz"
-      sha256 "ca638ec6e3d429cd11b19409e7cb99e449d9d4849639a535554db96996b91a1d"
+      url "https://github.com/manetu/agentvisor/releases/download/v0.6.0-1.205/agentvisor-linux-arm64-v0.6.0-1.205.tar.gz"
+      sha256 "dba3b77c693e43b7739d4fd5e46409c3d7e040ff776e0f92f24b9b2e9407a104"
     end
     on_intel do
-      url "https://github.com/manetu/agentvisor/releases/download/v0.5.0-55.202/agentvisor-linux-amd64-v0.5.0-55.202.tar.gz"
-      sha256 "38218bb1a5d03aca784e6ea86fbde69484869a2fb139ba8fb4721e9c96f3eaca"
+      url "https://github.com/manetu/agentvisor/releases/download/v0.6.0-1.205/agentvisor-linux-amd64-v0.6.0-1.205.tar.gz"
+      sha256 "3e2871e0955cb0c48c10e61227c0fc326f6221cbddea995001c29537b26c20d7"
     end
   end
 
