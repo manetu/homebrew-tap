@@ -6,8 +6,8 @@
 class Mpe < Formula
   desc "CLI for the Manetu Policy Engine - policy authoring, testing, and serving"
   homepage "https://github.com/manetu/policyengine"
-  url "https://github.com/manetu/policyengine/archive/refs/tags/v1.3.6.tar.gz"
-  sha256 "89c8d0674f7ae6d859d920516666b364c8de4b210495d01a7b541454f42f18e4"
+  url "https://github.com/manetu/policyengine/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "d172d41cb72b0fe608f40ecec6fd5a1f04032f7951b6170ce353aaf098c5a379"
   license "Apache-2.0"
   head "https://github.com/manetu/policyengine.git", branch: "master"
 
