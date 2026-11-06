@@ -2,28 +2,28 @@
 class Agentvisor < Formula
   desc "Manetu AgentVisor — a runtime that confines AI agents"
   homepage "https://github.com/manetu/agentvisor"
-  version "0.10.0-4.317"
+  version "0.10.0-5.318"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/manetu/agentvisor/releases/download/v0.10.0-4.317/agentvisor-darwin-arm64-v0.10.0-4.317.tar.gz"
-      sha256 "6229ffdc6ee592c40d2c6432b915fe022527e0dc173b726f9545cc0f8a62f07d"
+      url "https://github.com/manetu/agentvisor/releases/download/v0.10.0-5.318/agentvisor-darwin-arm64-v0.10.0-5.318.tar.gz"
+      sha256 "2f85bffa602dbf44e77cb9c6b791b5dd7d0e405c5728e61f735628296aa347dd"
     end
     on_intel do
-      url "https://github.com/manetu/agentvisor/releases/download/v0.10.0-4.317/agentvisor-darwin-amd64-v0.10.0-4.317.tar.gz"
-      sha256 "3c7a535f4bbc54256ebf0191174f9ab460e82d6510b9caecbb32391219f3bf15"
+      url "https://github.com/manetu/agentvisor/releases/download/v0.10.0-5.318/agentvisor-darwin-amd64-v0.10.0-5.318.tar.gz"
+      sha256 "a34a9b9a757f281c47c05b5c0ab49b77d1a9e64e7df21252b11c0d2218d2c25d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/manetu/agentvisor/releases/download/v0.10.0-4.317/agentvisor-linux-arm64-v0.10.0-4.317.tar.gz"
-      sha256 "bf843b72504552380b58fd8f4ae81c37880285bc1d9bebad8180326d8fc69d70"
+      url "https://github.com/manetu/agentvisor/releases/download/v0.10.0-5.318/agentvisor-linux-arm64-v0.10.0-5.318.tar.gz"
+      sha256 "8496866140bc86478d5f8aadf62acea6f3af5edb4b2daf579ff40075cc2f6bad"
     end
     on_intel do
-      url "https://github.com/manetu/agentvisor/releases/download/v0.10.0-4.317/agentvisor-linux-amd64-v0.10.0-4.317.tar.gz"
-      sha256 "9cec22cab86f197eba4e24e6e9b4a19a4621cc6ef13202eefa3f6d3611024f98"
+      url "https://github.com/manetu/agentvisor/releases/download/v0.10.0-5.318/agentvisor-linux-amd64-v0.10.0-5.318.tar.gz"
+      sha256 "877bea58c443052773edbacd9c5fc768706073ec508eb110421eb663dfe2b377"
     end
   end
 
